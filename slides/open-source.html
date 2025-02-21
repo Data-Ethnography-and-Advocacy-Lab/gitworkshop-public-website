@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="git-demonstration_files/libs/clipboard/clipboard.min.js"></script>
-<script src="git-demonstration_files/libs/quarto-html/tabby.min.js"></script>
-<script src="git-demonstration_files/libs/quarto-html/popper.min.js"></script>
-<script src="git-demonstration_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="git-demonstration_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="git-demonstration_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="git-demonstration_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="git-demonstration_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="open-source_files/libs/clipboard/clipboard.min.js"></script>
+<script src="open-source_files/libs/quarto-html/tabby.min.js"></script>
+<script src="open-source_files/libs/quarto-html/popper.min.js"></script>
+<script src="open-source_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="open-source_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="open-source_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="open-source_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="open-source_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.550">
 
   <meta name="author" content="Lindsay Poirier">
-  <title>Git/GitHub Demonstrations</title>
+  <title>Open Source Best Practices</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="git-demonstration_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="git-demonstration_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="open-source_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="open-source_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -30,13 +30,13 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="git-demonstration_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="git-demonstration_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="git-demonstration_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="git-demonstration_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="git-demonstration_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="git-demonstration_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="git-demonstration_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="open-source_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="open-source_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="open-source_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="open-source_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="open-source_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="open-source_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="open-source_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -329,7 +329,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Git/GitHub Demonstrations</h1>
+  <h1 class="title">Open Source Best Practices</h1>
   <p class="subtitle">Civic Hacks 2025</p>
 
 <div class="quarto-title-authors">
@@ -341,198 +341,57 @@ Lindsay Poirier
 </div>
 
 </section>
-<section id="what-is-version-control" class="slide level2">
-<h2>What is version control?</h2>
+<section id="open-source-vs.-free-software" class="slide level2">
+<h2>Open Source vs.&nbsp;Free Software</h2>
 <ul>
-<li>a process of recording and organizing a history of changes to files within a project</li>
-<li>enables a software developer to compare or return to previous versions of files</li>
-<li>enables a software team to pinpoint which changes led to issues in their coding project</li>
-</ul>
-</section>
-<section id="what-is-git" class="slide level2">
-<h2>What is git?</h2>
-<ul>
-<li>a version control system that supports collaborative software projects</li>
-<li>enables a software team to synchronize changes to files that are being made in many different places</li>
-</ul>
-</section>
-<section id="what-is-a-repository" class="slide level2">
-<h2>What is a repository?</h2>
-<ul>
-<li>a data structure for version control systems</li>
-<li>stores metadata recording the history of changes for a particular set of files</li>
-<li>will look like a regular folder on your computer since the metadata is often stored in hidden files</li>
+<li><em>Free software</em> refers to software that doesn’t cost you anything to use</li>
+<li><em>Open source software</em> refers to software whose source code has been shared publicly so that others can re-use and/or remix it</li>
 </ul>
 </section>
 <section class="slide level2">
 
 </section>
 <section>
-<section id="part-one-local-git-commands" class="title-slide slide level1 center">
-<h1>Part One: Local git commands</h1>
+<section id="why-might-we-choose-to-make-software-open-source" class="title-slide slide level1 center">
+<h1>Why might we choose to make software open source?</h1>
 
 </section>
-<section id="staging-files" class="slide level2">
-<h2>Staging Files</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="licensing" class="slide level2">
+<h2>Licensing</h2>
 <ul>
-<li><strong>Staging</strong> involves <em>selecting</em> which revised files to record in the version history.</li>
+<li>Licenses identify the conditions under which other individuals may re-use or remix source code</li>
+<li>Without specifying a license, code on Github.com is copyrighted.</li>
+<li>Copyleft: an alternative to copyright laws that indicates that code <em>must</em> remain free and open</li>
+<li>There are many existing licenses, and I’ve provided some links to help you choose between them.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/stage.png"></p>
-</div>
-</div>
 </section>
-<section id="committing-files" class="slide level2">
-<h2>Committing Files</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="securing-files" class="slide level2">
+<h2>Securing Files</h2>
 <ul>
-<li><strong>Committing</strong> actually records the revisions in the version history.
-<ul>
-<li>Any time you commit, you will write a commit message, summarizing the changes. Messages should be <em>descriptive</em> and <em>concise</em>.</li>
-</ul></li>
+<li>Sharing source code could reveal sensitive information</li>
+<li>Adding a <code>.gitignore</code> file to repos allows you to specify files that should not be tracked via version control.</li>
+<li>When creating repos at github.com, <code>.gitignore</code> templates are provided specific to different coding languages.</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/commit.png"></p>
-</div>
-</div>
 </section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="part-two-working-locally-and-remotely" class="title-slide slide level1 center">
-<h1>Part Two: Working Locally and Remotely</h1>
-
-</section>
-<section id="cloning-a-repository" class="slide level2">
-<h2>Cloning a Repository</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="documentation" class="slide level2">
+<h2>Documentation</h2>
 <ul>
-<li><strong>Cloning</strong> involves copying a repository from a remote source locally or vice versa.</li>
+<li>README files are files that outline what others need to know about a project.</li>
+<li>Good README files often include:</li>
+<li>A project description</li>
+<li>Project contributors</li>
+<li>A roadmap/overview of the repo’s organization</li>
+<li>An explanation of how others can install/configure the code</li>
+<li>An overview of how to contribute to the project</li>
+<li>Information on how to ask questions or request changes to the code</li>
 </ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/clone.png"> <img data-src="img/clone-repo.png"></p>
-</div>
-</div>
 </section>
-<section id="pulling-changes" class="slide level2">
-<h2>Pulling Changes</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="issues" class="slide level2">
+<h2>Issues</h2>
 <ul>
-<li><strong>Pulling</strong> involves bringing changes made to a remote repository locally.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/pull.png"></p>
-</div>
-</div>
-</section>
-<section id="pushing-changes" class="slide level2">
-<h2>Pushing Changes</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Pushing</strong> involves sending changes made to a local repository remotely.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/push.png"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="part-three-conflicts" class="title-slide slide level1 center">
-<h1>Part Three: Conflicts!</h1>
-
-</section>
-<section id="push-error" class="slide level2">
-<h2>Push Error</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>A push error occurs when we make changes to files on our local machines, and go to commit and push them to GitHub.com, but other changes had already been made to the file at GitHub.com that were not yet pulled into our local environments.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<blockquote>
-<p>The Fix: Pull changes to local machine, and try committing and pushing again</p>
-</blockquote>
-</div>
-</div>
-</section>
-<section id="pull-error" class="slide level2">
-<h2>Pull Error</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>A pull error occurs when changes have already been made to the same location (the same line number) in both a remote file and a local file, and then we try to pull the changes from the remote repo to our local machines.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<blockquote>
-<p>The Fix: Stage and commit your local changes and then try pulling again</p>
-</blockquote>
-</div>
-</div>
-</section>
-<section id="merge-conflict" class="slide level2">
-<h2>Merge Conflict</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>A merge conflict often occurs following a pull error. It occurs when two people are working on the same file, and they commit changes that are in conflict with one another.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<blockquote>
-<p>The Fix: Open the file with conflicts and edit the lines with conflict. Decide what that line should look like and delete all other content. This means you must delete “&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD”, “=======”, and “&gt;&gt;&gt;&gt;&gt;&gt;&gt; <long-hash>”, and you likely should delete at least one other line.</long-hash></p>
-</blockquote>
-<p><img data-src="img/merge-conflict.png"></p>
-</div>
-</div>
-</section>
-<section class="slide level2">
-
-</section></section>
-<section>
-<section id="part-four-mitigating-conflicts" class="title-slide slide level1 center">
-<h1>Part Four: Mitigating Conflicts</h1>
-
-</section>
-<section id="branching" class="slide level2">
-<h2>Branching</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Branching</strong> involves creating a copy of a repo specifically for editing. You can make changes to files while maintaining a stable copy of the original.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/branch.png"></p>
-</div>
-</div>
-</section>
-<section id="pull-requests" class="slide level2">
-<h2>Pull Requests</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><strong>Pull requests</strong> are requests to bring the changes made in a branch of the project into another branch of the project (such as the original).
-<ul>
-<li>Collaborators can make requests and review the changes before approving the request.</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="img/pull-request.png"></p>
-</div>
-</div>
-</section>
-<section id="merging" class="slide level2">
-<h2>Merging</h2>
-<ul>
-<li><strong>Merging</strong> involves approving the changes requested via a pull request and ultimately bringing the changes made in a different branch into the current branch.</li>
+<li>Support project planning by allowing you to create a wishlist of project changes</li>
+<li>Allow your team and others to report bugs, request features, or ask questions</li>
+<li>github.com enables you to assign collaborators to issues so that you can keep track of who is responsible for what</li>
 </ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -544,20 +403,20 @@ Lindsay Poirier
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="git-demonstration_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="open-source_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="git-demonstration_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="git-demonstration_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="git-demonstration_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="open-source_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

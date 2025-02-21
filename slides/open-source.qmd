@@ -1,0 +1,69 @@
+---
+title: "Open Source Best Practices"
+subtitle: "Civic Hacks 2025"
+author: Lindsay Poirier
+format: 
+  revealjs:
+    scrollable: true
+    df-print: paged
+    theme: [default]
+    incremental: false
+    chalkboard:
+      theme: whiteboard
+      boardmarker-width: 5
+editor: source
+execute:
+  echo: true
+  messages: false
+  warnings: false
+---
+
+## Open Source vs. Free Software
+
+-   *Free software* refers to software that doesn't cost you anything to use
+-   *Open source software* refers to software whose source code has been shared publicly so that others can re-use and/or remix it
+
+------------------------------------------------------------------------
+
+# Why might we choose to make software open source?
+
+------------------------------------------------------------------------
+
+## Licensing
+
+-   Licenses identify the conditions under which other individuals may re-use or remix source code
+-   Without specifying a license, code on Github.com is copyrighted. 
+-   Copyleft: an alternative to copyright laws that indicates that code *must* remain free and open
+-   There are many existing licenses, and I've provided some links to help you choose between them.
+
+------------------------------------------------------------------------
+
+## Securing Files
+
+-   Sharing source code could reveal sensitive information 
+-   Adding a `.gitignore` file to repos allows you to specify files that should not be tracked via version control. 
+-   When creating repos at github.com, `.gitignore` templates are provided specific to different coding languages.
+
+------------------------------------------------------------------------
+
+## Documentation
+
+-   README files are files that outline what others need to know about a project.
+-   Good README files often include:
+  -   A project description
+  -   Project contributors
+  -   A roadmap/overview of the repo's organization
+  -   An explanation of how others can install/configure the code
+  -   An overview of how to contribute to the project
+  -   Information on how to ask questions or request changes to the code
+  
+
+
+------------------------------------------------------------------------
+
+## Issues
+
+- Support project planning by allowing you to create a wishlist of project changes
+- Allow your team and others to report bugs, request features, or ask questions
+- github.com enables you to assign collaborators to issues so that you can keep track of who is responsible for what
+

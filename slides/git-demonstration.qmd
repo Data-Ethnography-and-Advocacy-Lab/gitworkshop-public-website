@@ -7,7 +7,7 @@ format:
     scrollable: true
     df-print: paged
     theme: [default]
-    incremental: true
+    incremental: false
     chalkboard:
       theme: whiteboard
       boardmarker-width: 5
@@ -45,17 +45,34 @@ execute:
 
 ------------------------------------------------------------------------
 
-## Staging and Committing Files
+## Staging Files
 
 ::: columns
 ::: {.column width="50%"}
 
 - **Staging** involves *selecting* which revised files to record in the version history.
+
+:::
+
+::: {.column width="50%"}
+
+![](img/stage.png)
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Committing Files
+
+::: columns
+::: {.column width="50%"}
+
 - **Committing** actually records the revisions in the version history.
   - Any time you commit, you will write a commit message, summarizing the changes. Messages should be *descriptive* and *concise*.
 :::
 
 ::: {.column width="50%"}
+![](img/commit.png)
 
 :::
 :::
@@ -76,7 +93,8 @@ execute:
 :::
 
 ::: {.column width="50%"}
-
+![](img/clone.png)
+![](img/clone-repo.png)
 :::
 :::
 
@@ -93,7 +111,7 @@ execute:
 :::
 
 ::: {.column width="50%"}
-
+![](img/pull.png)
 :::
 :::
 
@@ -109,6 +127,8 @@ execute:
 :::
 
 ::: {.column width="50%"}
+
+![](img/push.png)
 
 :::
 :::
@@ -168,6 +188,8 @@ execute:
 
 > The Fix: Open the file with conflicts and edit the lines with conflict. Decide what that line should look like and delete all other content. This means you must delete “<<<<<<< HEAD”, “=======”, and “>>>>>>> <long-hash>”, and you likely should delete at least one other line. 
 
+![](img/merge-conflict.png)
+
 :::
 :::
 
@@ -180,10 +202,41 @@ execute:
 
 ## Branching
 
+::: columns
+::: {.column width="50%"}
+
+- **Branching** involves creating a copy of a repo specifically for editing. You can make changes to files while maintaining a stable copy of the original.
+
+:::
+
+::: {.column width="50%"}
+
+![](img/branch.png)
+
+:::
+:::
+
 ------------------------------------------------------------------------
 
 ## Pull Requests
 
+::: columns
+::: {.column width="50%"}
+
+- **Pull requests** are requests to bring the changes made in a branch of the project into another branch of the project (such as the original). 
+  - Collaborators can make requests and review the changes before approving the request.
+
+:::
+
+::: {.column width="50%"}
+
+![](img/pull-request.png)
+
+:::
+:::
+
 ------------------------------------------------------------------------
 
 ## Merging
+
+- **Merging** involves approving the changes requested via a pull request and ultimately bringing the changes made in a different branch into the current branch.
