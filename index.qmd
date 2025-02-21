@@ -1,0 +1,114 @@
+---
+title: "Civic Hack Git and Open Soruce Workshop"
+format: 
+  html:
+    theme: flatly
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
+    highlight: tango
+    lib_dir: libs
+---
+
+
+## Introduction
+
+In this workshop, we will practice a git workflow and learn best practices for publishing code on GitHub.com
+
+## Agenda
+
+- 4:00 - 4:10 Introductions
+- 4:10 - 4:50 git/GitHub Workflow Demonstrations
+- 4:50 - 5:00 Setting Up GitHub Desktop
+- 5:00 - 5:20 Open Source Best Practices
+- 5:20 - 5:40 Setting Up your first GitHub Repo
+- 5:40 - 6:00 Project Management and Code Review
+
+## Introductions
+
+Accessing this website:
+
+
+
+## git/GitHub Workflow Demonstrations
+
+- [Slides](slides/git-demonstration.html)
+- GitHub Desktop [Documentation](https://docs.github.com/en/desktop)
+- git command line [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+## Setting Up GitHub Desktop
+
+Follow instructions at [this link](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop) to set-up GitHub Desktop. Specifically, you will need to:
+
+1. Install GitHub Desktop
+2. Create a GitHub account and configure it with GitHub Desktop
+3. Configure git (especially if you have a Windows laptop)
+
+## Open Source Best Practices
+
+- Slides
+- Other useful [workshop materials](https://open-source-for-researchers.github.io/open-source-workshop/01-what-is-open-source)
+
+## Setting Up Your First GitHub Repo
+
+### Create a Repo in GitHub
+
+  - Add a Description
+  - Set the repository to be Public
+  - Add a `README.md` file
+  - Add a `.gitignore` file
+  - Select an open source license
+
+### Add collaborators
+
+  - Navigate to `Settings > Collaborators and Teams`
+  - Click `Add People`
+  - Enter a collaborators' username and grant them "Write" permissions
+  - All team members accept invitation
+  
+### Clone to your local machine
+
+All team members should clone the project to their local machines. If you are using GitHub Desktop, you can clone the repository by clicking `File > Clone Repository`. Once the repository is cloned to your computer, you can navigate to that folder and open `README.md` in your preferred text editor. 
+
+### Update the `README.md`
+
+Only one team members should update `README.md`. Other students in the team can follow along. 
+
+  - Describe the purpose of your repository in `README.md`
+  - List all of the project collaborators
+  - Save the file. 
+  - Stage and commit changes in GitHub Desktop. 
+    - Be sure to leave a descriptive commit message!
+  
+::: callout-tip
+## Writing in Markdown
+
+If you are new to Markdown, you might want to reference [this cheat sheet](https://www.markdownguide.org/cheat-sheet/).
+
+:::
+
+::: callout-tip
+## README Templates
+
+There are some excellent README templates available for open source projects [here](https://www.readme-templates.com/).
+
+:::
+
+### Push Changes back to github.com
+
+The team member that revised `README.md` should push their changes back to github.com. If you are using GitHub Desktop you can do this by clicking on `Repository > Push`. After pushing, all team members should review the changes to `README.md` by navigating to your repository at github.com.
+
+
+::: callout-tip
+## Making your Project Citable
+
+Once your code is in a publishable format, you may wish to make it citable so that you can list it on a CV or resume. [Here](https://coderefinery.github.io/github-without-command-line/doi/) is a great tutorial on how to do this by integrating your GitHub repository with Zenodo.
+
+:::
+
+## Project Management and Code Review
+
+### Issues
+
+### Pull Requests
