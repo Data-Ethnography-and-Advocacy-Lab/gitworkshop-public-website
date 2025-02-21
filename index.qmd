@@ -29,6 +29,9 @@ In this workshop, we will practice a git workflow and learn best practices for p
 
 Accessing this website:
 
+![](slides/img/qr.png) 
+
+
 
 
 ## git/GitHub Workflow Demonstrations
