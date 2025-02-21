@@ -1,1 +1,1 @@
-# gitworkshop-public-website
+# Git and Open Source Workshop
