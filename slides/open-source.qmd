@@ -61,9 +61,10 @@ execute:
 
 ------------------------------------------------------------------------
 
-## Securing Files
+## Forking an Open Source Project
 
--   Sharing source code could reveal sensitive information 
--   Adding a `.gitignore` file to repos allows you to specify files that should not be tracked via version control. 
--   When creating repos at github.com, `.gitignore` templates are provided specific to different coding languages.
+- Code licensed with a copyleft license and made available on github.com can be **forked**.
+- **Forking** involves copying a project's source code so that you can use it as the basis for your own project. 
+- It is possible to make edits and the request that the original creators of the code merge those changes into their project. 
+
 

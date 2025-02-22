@@ -20,9 +20,9 @@ In this workshop, we will practice a git workflow and learn best practices for p
 ## Open Source Best Practices
 
 - [Slides](slides/open-source.html)
+- [Example Open Source Project](https://github.com/BetaNYC/nyc-boundaries)
 - Help with [choosing a license](https://choosealicense.com/)
 - [README templates](https://www.readme-templates.com/) available for open source projects 
-- [Example Open Source Project](https://github.com/academicpages/academicpages.github.io)
 - Other useful [workshop materials](https://open-source-for-researchers.github.io/open-source-workshop/01-what-is-open-source)
 
 ## git/GitHub Workflow Demonstrations
