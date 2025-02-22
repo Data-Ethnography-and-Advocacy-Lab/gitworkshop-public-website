@@ -81,5 +81,7 @@ If you are new to Markdown, you might want to reference [this cheat sheet](https
 If you are using GitHub Desktop you can do this by clicking on `Repository > Push`. After pushing, all team members should review the changes to `README.md` by navigating to your repository at github.com.
 
 
+## Practice Contributing to an Open Source Repo
 
+I have created a git-sandbox at [this link](https://github.com/Data-Ethnography-and-Advocacy-Lab/git-sandbox). Follow the instructions in [this issue](https://github.com/Data-Ethnography-and-Advocacy-Lab/git-sandbox/issues/2) to practice contributing to an open source repository.
 
