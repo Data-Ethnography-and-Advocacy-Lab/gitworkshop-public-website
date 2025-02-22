@@ -1,0 +1,128 @@
+---
+title: "Git and Open Soruce Workshop"
+format: 
+  html:
+    theme: flatly
+    toc: true
+    toc_float:
+      collapsed: true
+      smooth_scroll: false
+    highlight: tango
+    lib_dir: libs
+---
+
+
+## Introduction
+
+In this workshop, we will practice a git workflow and learn best practices for publishing code on GitHub.com
+
+## Agenda
+
+- 4:00 - 4:10 Introductions
+- 4:10 - 4:50 git/GitHub Workflow Demonstrations
+- 4:50 - 5:00 Setting Up GitHub Desktop
+- 5:00 - 5:20 Open Source Best Practices
+- 5:20 - 5:40 Setting Up your first GitHub Repo
+- 5:40 - 6:00 Project Management and Code Review
+
+## Introductions
+
+Accessing this website:
+
+![](slides/img/qr.png) 
+
+
+
+
+## git/GitHub Workflow Demonstrations
+
+- [Slides](slides/git-demonstration.html)
+- GitHub Desktop [Documentation](https://docs.github.com/en/desktop)
+- git command line [cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+## Setting Up GitHub Desktop
+
+Follow instructions at [this link](https://docs.github.com/en/desktop/installing-and-authenticating-to-github-desktop/setting-up-github-desktop) to set-up GitHub Desktop. Specifically, you will need to:
+
+1. Install GitHub Desktop
+2. Create a GitHub account and configure it with GitHub Desktop
+3. Configure git (especially if you have a Windows laptop)
+
+## Open Source Best Practices
+
+- [Slides](slides/open-source.html)
+- Help with [choosing a license](https://choosealicense.com/)
+- [README templates](https://www.readme-templates.com/) available for open source projects 
+- Other useful [workshop materials](https://open-source-for-researchers.github.io/open-source-workshop/01-what-is-open-source)
+
+## Setting Up Your First GitHub Repo
+
+### Create a Repo in GitHub
+
+  - Add a Description
+  - Set the repository to be Public
+  - Add a `README.md` file
+  - Add a `.gitignore` file
+  - Select an open source license
+
+### Add collaborators
+
+  - Navigate to `Settings > Collaborators and Teams`
+  - Click `Add People`
+  - Enter a collaborators' username and grant them "Write" permissions
+  - All team members accept invitation
+  
+### Clone to your local machine
+
+All team members should clone the project to their local machines. If you are using GitHub Desktop, you can clone the repository by clicking `File > Clone Repository`. Once the repository is cloned to your computer, you can navigate to that folder and open `README.md` in your preferred text editor. 
+
+### Update the `README.md`
+
+Only one team members should update `README.md`. Other students in the team can follow along. 
+
+  - Describe the purpose of your repository in `README.md`
+  - List all of the project collaborators
+  - Save the file. 
+  - Stage and commit changes in GitHub Desktop. 
+    - Be sure to leave a descriptive commit message!
+  
+::: callout-tip
+## Writing in Markdown
+
+If you are new to Markdown, you might want to reference [this cheat sheet](https://www.markdownguide.org/cheat-sheet/).
+
+:::
+
+
+### Push Changes back to github.com
+
+The team member that revised `README.md` should push their changes back to github.com. If you are using GitHub Desktop you can do this by clicking on `Repository > Push`. After pushing, all team members should review the changes to `README.md` by navigating to your repository at github.com.
+
+
+::: callout-tip
+## Making your Project Citable
+
+Once your code is in a publishable format, you may wish to make it citable so that you can list it on a CV or resume. [Here](https://coderefinery.github.io/github-without-command-line/doi/) is a great tutorial on how to do this by integrating your GitHub repository with Zenodo.
+
+:::
+
+## Project Management and Code Review
+
+### Issues
+
+Issues support project planning by allowing you to create a wishlist of project changes. By assigning issues to certain collaborators on your project team, you can have clear documentation of who is responsible for what. In my own projects, I use Issues for a number of purposes. Sometimes I use Issues to document bugs that I notice in my code that need to be fixed. Other times I use them to track features that I would like to add to my code down the road. Oftentimes, in my public repositories, I encourage others that are using my code to submit issues to ask questions about how something works, to report bugs, or to request features.
+
+1. Navigate to github.com with your team mates.
+2. Add at least one issue to the repository titled "Describe the project in README.md". 
+3. Assign the issue to one of your collaborators and assign it labels. 
+
+### Pull Requests
+
+Pull requests are requests to eventually merge changes made in a branch of a repository into another branch of a repository (such as main). They can be used to compare changes to files made in a branch to the original version of those files. Using review features at github.com, team members can use pull requests as a means of reviewing and suggesting changes to code. 
+
+1. One team member should create a branch of the main repository on your local machine. Title the branch 'documentation'.
+2. Make an edit to README.md. Save, stage, and commit the change. 
+3. Push the change, and create a pull request. Assign a reviewer to the pull request. 
+4. Navigate to 'Files changed' to review changes to the file. 
+5. Reviewers can add comments at specific lines or to the file as a whole when clicking on the button 'Review Changes."
+6. Merge the changes, and in the description type "closes #" and then select the issue you created from the dropdown.

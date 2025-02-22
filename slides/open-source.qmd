@@ -25,7 +25,7 @@ execute:
 
 ------------------------------------------------------------------------
 
-# Why might we choose to make software open source?
+# Why might someone choose to make software open source?
 
 ------------------------------------------------------------------------
 
@@ -35,14 +35,6 @@ execute:
 -   Without specifying a license, code on Github.com is copyrighted. 
 -   Copyleft: an alternative to copyright laws that indicates that code *must* remain free and open
 -   There are many existing licenses, and I've provided some links to help you choose between them.
-
-------------------------------------------------------------------------
-
-## Securing Files
-
--   Sharing source code could reveal sensitive information 
--   Adding a `.gitignore` file to repos allows you to specify files that should not be tracked via version control. 
--   When creating repos at github.com, `.gitignore` templates are provided specific to different coding languages.
 
 ------------------------------------------------------------------------
 
@@ -66,4 +58,12 @@ execute:
 - Support project planning by allowing you to create a wishlist of project changes
 - Allow your team and others to report bugs, request features, or ask questions
 - github.com enables you to assign collaborators to issues so that you can keep track of who is responsible for what
+
+------------------------------------------------------------------------
+
+## Securing Files
+
+-   Sharing source code could reveal sensitive information 
+-   Adding a `.gitignore` file to repos allows you to specify files that should not be tracked via version control. 
+-   When creating repos at github.com, `.gitignore` templates are provided specific to different coding languages.
 
